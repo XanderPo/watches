@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>watches</title>
+    <link type="image/x-icon" href="" rel="shortcut icon">    
+    <style>
+        .hour-hand{
+            margin-top: -2px;
+            display: inline;
+            width: 30%;
+            transform: rotate(-90deg);
+            transform-origin: left;
+            position: absolute;
+            left: 50%;
+            top: 50%; 
+            border: 3px solid darkcyan;
+        }
+        .minute-hand{
+            margin-bottom: -2px;
+            display: inline;
+            width: 40%;
+            transform: rotate(-90deg);
+            transform-origin: left;
+            position: absolute;
+            left: 50%;
+            bottom: 50%; 
+            border: 2px solid darkred; 
+        }
+        .second-hand{
+            margin-bottom: -2px;
+            display: inline;
+            width: 45%;
+            transform: rotate(-90deg);
+            transform-origin: left;
+            position: absolute;
+            left: 50%;
+            bottom: 50%; 
+            border: 1.5px solid rgb(32, 1, 1); 
+        }
+        .frame{
+            margin-left: 200px;
+            margin-top: 100px;
+            padding: 0;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid darkgreen;            
+            position:absolute;
+            background-color: rgba(215, 192, 192, 0.471);
+        }
+        .am-pm{
+            position: absolute;
+            left: 46%;
+            bottom: 20%; 
+            color:  rgba(158, 8, 8, 0.471);
+        }
+        .tag{
+            position: absolute;
+            color: darkmagenta
+        } 
+        .tag-dot{
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: darkred;
+        }
+        .tag12{
+            left: 47%;
+            top: 2%;         
+        }  
+        .tag6{
+            left: 48%;
+            bottom: 2%;          
+        } 
+        .tag3{
+            right: 2%;
+            bottom: 46%;       
+        }
+        .tag9{
+            left: 2%;
+            bottom: 46%;          
+        } 
+        .tag1{
+            right: 25%;
+            top: 8%;          
+        }
+        .tag2{
+            right: 8%;
+            top: 25%;          
+        }
+        .tag4{
+            right: 8%;
+            bottom: 25%;          
+        }
+        .tag5{
+            right: 25%;
+            bottom: 8%;          
+        } 
+        .tag7{
+            left: 25%;
+            bottom: 8%;        
+        }
+        .tag8{
+            left: 8%;
+            bottom: 25%;           
+        }
+        .tag10{
+            left: 8%;
+            top: 25%;          
+        }
+        .tag11{ 
+            left: 25%;
+            top: 8%;          
+        }
+
+    </style>
+</head>
+<body>  
+    <div class="frame">
+        <hr class="hour-hand">
+        <hr class="minute-hand">
+        <hr class="second-hand">
+        <div class="tag1 tag tag-dot"></div>
+        <div class="tag2 tag tag-dot"></div>
+        <div class="tag4 tag tag-dot"></div>
+        <div class="tag5 tag tag-dot"></div>
+        <div class="tag7 tag tag-dot"></div>
+        <div class="tag8 tag tag-dot"></div>
+        <div class="tag10 tag tag-dot"></div>
+        <div class="tag11 tag tag-dot"></div>
+        <div class="tag3 tag">3</div>
+        <div class="tag6 tag">6</div>
+        <div class="tag9 tag">9</div>
+        <div class="tag12 tag">12</div>
+        <span class="am-pm">am</span>
+    </div>    
+    <script src="./main.js">
+        
+    </script>
+</body>
+</html>
